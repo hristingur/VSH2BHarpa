@@ -1,0 +1,154 @@
+*,
+*:after,
+*:before{
+	box-sizing: border-box;
+}
+body{
+	margin: 0 auto;
+	background: #1a1a1a;
+	width: 80%;
+	display: flex; 
+	flex-flow: row wrap ;
+	
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  width: 100%;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+.topmenu{
+	width: 100%;
+	height: 150px;
+	text-align: center;
+
+	background: #7b4397; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #7b4397 , #dc2430); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #7b4397 , #dc2430); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.staersti{
+	
+	text-align: center;
+	color: lightblue;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 2.2em;
+	
+	text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+                 0px -5px 35px rgba(255,255,255,0.3);
+}
+.staersti2{
+
+	text-align: center;
+	color: lightblue;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 2.2em;
+	margin-top: 40px;
+	text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+                 0px -5px 35px rgba(255,255,255,0.3);
+}
+.lorem{
+	width: 100%;
+	height: 200px;
+	background-color: #33cccc;
+	padding: 5px;
+	font-family: Georgia, serif;
+	font-size: 1em;
+}
+p{
+	color: black;
+}
+.aside{
+	border: 1px solid green; 
+    display: flex;
+    flex-flow: row wrap;
+	width: 100%;
+	height: 400px;
+	
+}
+.insideleft{
+  
+	width: 30%;
+	height: 100%;
+	color: blue;
+}
+.insideright{
+	padding: 5px;
+	 
+	width: 70%;
+	height: 100%;
+	color: lightblue;
+	text-align: center;
+}
+.inputs{
+	padding: 5px;
+	
+	width: 100%;
+	height: 50%;
+	color: lightblue;
+	text-align: center;
+}
+
+@media screen and (max-width: 48em)
+{
+	 .topmenu{
+    	font-size: 0.5em;
+    }
+    .lorem{
+    	height: 400px;
+    }
+       .insideleft{
+    	display: flex;
+    	flex-flow: column;
+    	width: 100%;
+    	height: 50%;
+    }
+    .insideright{
+    	display: flex;
+    	flex-flow: column;
+    	width: 100%;
+    	height: 50%;
+    }
+}
+
+@media screen and (max-width: 32em)
+{
+	 
+    .lorem{
+    	height: 500px;
+    }
+    .aside{
+        flex-direction: column;
+        height: 550px;
+
+    }
+
+ 
+    .container{
+    	width: 100%;
+    	height: 50%;
+    	border-style: none;
+    }
+
+   
+  
+
+}
